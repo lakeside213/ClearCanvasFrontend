@@ -1,0 +1,55 @@
+@media only screen and (max-width: 1023px) {
+    body {
+        padding: 0;
+    }
+    nav {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+}
+
+@media only screen and (max-width: 869px) {
+    .menuOpenBtn {
+        display: block;
+        float: right;
+        transform: translateY(98%);
+    }
+    .navigation {
+        display: none;
+    }
+    .banner {
+        height: 28rem;
+    }
+    .bannerContent a {
+        text-decoration: none;
+        color: #000;
+    }
+    .banner .bannerContent {
+        background-color: transparent;
+        color: #000;
+        height: 22rem;
+        width: 35rem;
+        padding: 0;
+        right: 0;
+        margin-left: 2%;
+        position: relative !important;
+        top: 98%;
+        left: -5%;
+    }
+    .bannerContent a span {
+        display: block;
+        font-size: 3rem;
+        padding: 1.5rem;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    .bannerContent div {
+        display: block;
+        margin-top: 0.9rem;
+        font-size: 2rem;
+        margin-left: 1.5rem;
+        font-weight: 300;
+    }
+}
+@media only screen and (max-width: 480px) {
+}

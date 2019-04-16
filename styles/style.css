@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    padding: 1.5rem;
+    min-width: 367px;
+}
+
+.siteNav {
+    width: 84%;
+    margin-left: 7%;
+    margin-right: 9%;
+}
+.siteNav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.logoContainer {
+    float: left;
+}
+.logoContainer img {
+    height: 11rem;
+    width: 23rem;
+}
+.navigation {
+    list-style: none;
+    float: right;
+    margin-top: 4.5rem;
+}
+
+.navigation li a {
+    color: #1a171b;
+
+    text-decoration: none;
+}
+.navigation li {
+    display: inline-block;
+    margin-left: 4rem;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.navigation li:first-child {
+    display: inline-block;
+    margin-left: 0;
+    text-decoration: none;
+}
+
+.banner {
+    background-image: url(../assets/images/bird.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 52rem;
+    width: 85%;
+    margin-left: 7%;
+    /* padding: 5rem; */
+    margin-right: 8%;
+    border-radius: 6px;
+}
+.bannerContent {
+    display: block;
+    position: absolute;
+    background-color: #418fc3;
+    height: 22rem;
+    width: 51rem;
+    top: 68%;
+    padding: 2rem;
+    padding-left: 4rem;
+    right: 4%;
+    border-radius: 6px;
+}
+.bannerContent a {
+    text-decoration: none;
+    color: #fff;
+}
+.bannerContent div {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.bannerContent a span {
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 300;
+
+    text-decoration: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #000;
+    overflow-x: hidden;
+    z-index: 1000;
+    transition: width 0.2s;
+}
+
+.overlayContent {
+    position: relative;
+    top: 10%;
+    left: 6%;
+    width: 100%;
+    text-align: start;
+    margin-top: 7rem;
+}
+.overlay a {
+    padding: 2rem;
+    color: #fff;
+    font-size: 3rem;
+    text-decoration: none;
+    display: block;
+    font-weight: 300;
+}
+.menuOpenBtn {
+    display: none;
+}
+.overlay .overlayContent a {
+    padding: 2rem;
+    color: #fff;
+    font-size: 3rem;
+    text-decoration: none;
+    display: block;
+    font-weight: 300;
+}
+.overlay a:hover {
+    color: #ccc;
+}
+
+.overlay .menuCloseBtn {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 5rem;
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #333;
+    margin: 0.8rem 0;
+    transition: all 0.4s ease-in;
+}
