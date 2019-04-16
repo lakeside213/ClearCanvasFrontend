@@ -142,7 +142,7 @@ body {
     right: 2rem;
     font-size: 5rem;
 }
-.container {
+.burgerMenu {
     display: inline-block;
     cursor: pointer;
 }
