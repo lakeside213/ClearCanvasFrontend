@@ -35,12 +35,6 @@ body {
     float: right;
     margin-top: 4.5rem;
 }
-
-.navigation li a {
-    color: #1a171b;
-
-    text-decoration: none;
-}
 .navigation li {
     display: inline-block;
     margin-left: 4rem;
@@ -52,7 +46,11 @@ body {
     margin-left: 0;
     text-decoration: none;
 }
+.navigation li a {
+    color: #1a171b;
 
+    text-decoration: none;
+}
 .banner {
     background-image: url(../assets/images/bird.jpg);
     background-position: center;
@@ -81,7 +79,7 @@ body {
     text-decoration: none;
     color: #fff;
 }
-.bannerContent div {
+.bannerContent a div {
     display: inline-block;
     margin-top: 2rem;
     font-size: 2rem;
