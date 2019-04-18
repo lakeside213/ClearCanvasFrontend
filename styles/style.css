@@ -168,6 +168,16 @@ body {
         transform: translateY(0);
     }
 }
+@keyframes slideOutBottom {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100rem);
+    }
+}
 .overlay a:hover {
     color: #ccc;
 }
