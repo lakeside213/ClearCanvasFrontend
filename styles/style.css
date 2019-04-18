@@ -118,6 +118,7 @@ body {
         transform: translateX(0);
     }
 }
+
 .overlay {
     position: fixed;
     top: 0;
@@ -128,6 +129,7 @@ body {
     overflow-x: hidden;
     z-index: 1000;
     transition: width 0.4s;
+    backface-visibility: hidden;
 }
 
 .overlayContent {
@@ -156,7 +158,10 @@ body {
     text-decoration: none;
     display: block;
     font-weight: 300;
-    /* animation: slideInBottom 1s;*/
+    backface-visibility: hidden;
+}
+.overlayLink:hover {
+    transform: scaleY(1.1);
 }
 @keyframes slideInBottom {
     0% {
