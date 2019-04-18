@@ -41,6 +41,7 @@ body {
     text-decoration: none;
     font-size: 2rem;
 }
+
 .navigation li:first-child {
     display: inline-block;
     margin-left: 0;
@@ -48,8 +49,12 @@ body {
 }
 .navigation li a {
     color: #1a171b;
-
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
     text-decoration: none;
+}
+.navigation li a:hover {
+    border-bottom: 1.5px solid #000;
 }
 .banner {
     background-image: url(../assets/images/bird.jpg);
@@ -74,7 +79,16 @@ body {
     padding-left: 4rem;
     right: 4%;
     border-radius: 6px;
+    transition: transform 0.3s;
+    animation: moveInRight 0.6s;
+    backface-visibility: hidden;
 }
+
+.bannerContent:hover {
+    transform: scale(1.1);
+    box-shadow: 6px 9px 20px #418fc396;
+}
+
 .bannerContent a {
     text-decoration: none;
     color: #fff;
@@ -92,7 +106,18 @@ body {
 
     text-decoration: none;
 }
+@keyframes moveInRight {
+    0% {
+        transform: translateX(100rem);
+    }
 
+    80% {
+        transform: translateX(-8rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 .overlay {
     position: fixed;
     top: 0;
