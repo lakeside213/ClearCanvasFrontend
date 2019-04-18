@@ -21,7 +21,7 @@
 
         80% {
             opacity: 1;
-            transform: translateY(4rem);
+            transform: translateY(4rem) scale(1.2);
         }
         100% {
             opacity: 1;

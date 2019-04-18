@@ -149,13 +149,24 @@ body {
 .menuOpenBtn {
     display: none;
 }
-.overlay .overlayContent a {
+.overlayLink {
     padding: 2rem;
     color: #fff;
     font-size: 3rem;
     text-decoration: none;
     display: block;
     font-weight: 300;
+    /* animation: slideInBottom 1s;*/
+}
+@keyframes slideInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 .overlay a:hover {
     color: #ccc;
