@@ -127,7 +127,7 @@ body {
     background: #000;
     overflow-x: hidden;
     z-index: 1000;
-    transition: width 0.2s;
+    transition: width 0.4s;
 }
 
 .overlayContent {
