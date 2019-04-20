@@ -259,19 +259,6 @@ body {
           backface-visibility: hidden;
 }
 
-.overlay a {
-  padding: 2rem;
-  color: #fff;
-  font-size: 3rem;
-  text-decoration: none;
-  display: block;
-  font-weight: 300;
-}
-
-.overlay a:hover {
-  color: #ccc;
-}
-
 .overlayContent {
   position: relative;
   top: 10%;
@@ -292,13 +279,28 @@ body {
           backface-visibility: hidden;
 }
 
+.overlayLink:hover {
+  color: #ccc;
+}
+
 .overlayCloseBtn {
+  padding: 2rem;
+  color: #fff;
+  font-size: 3rem;
+  text-decoration: none;
+  display: block;
+  font-weight: 300;
   position: absolute;
   top: 1rem;
   right: 2rem;
-  font-size: 5rem;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
+}
+
+@media (max-width: 56.25em) {
+  .overlayCloseBtn {
+    font-size: 5rem;
+  }
 }
 
 .banner {
@@ -435,8 +437,8 @@ body {
   .burgerMenu {
     display: block;
     float: right;
-    -webkit-transform: translateY(98%);
-            transform: translateY(98%);
+    -webkit-transform: translateY(85%);
+            transform: translateY(85%);
   }
 }
 

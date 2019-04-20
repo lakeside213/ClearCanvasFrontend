@@ -10,17 +10,6 @@
     transition: width 0.4s;
     backface-visibility: hidden;
 
-    a {
-        padding: 2rem;
-        color: $color-white;
-        font-size: 3rem;
-        text-decoration: none;
-        display: block;
-        font-weight: 300;
-        &:hover {
-            color: $color-white-light-1;
-        }
-    }
     &Content {
         position: relative;
         top: 10%;
@@ -37,12 +26,25 @@
         display: block;
         font-weight: 300;
         backface-visibility: hidden;
+        &:hover {
+            color: $color-white-light-1;
+        }
     }
+
     &CloseBtn {
+        padding: 2rem;
+        color: $color-white;
+        font-size: 3rem;
+        text-decoration: none;
+        display: block;
+        font-weight: 300;
         position: absolute;
         top: 1rem;
         right: 2rem;
-        font-size: 5rem;
+
+        @include respond(tabPort) {
+            font-size: 5rem;
+        }
         animation-delay: 0.3s;
     }
 }
