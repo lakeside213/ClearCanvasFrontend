@@ -1,3 +1,21 @@
+/*
+0-600px Phone
+600-900px Tablet potrait
+900-1200px Tbalet landscape
+1200-1800 normal styles
+1800px +Big desktops
+
+
+breakpoint arguement choices
+-smallPhone
+-phone
+-tabPort
+-tabLand
+-bigDesktop
+
+
+ 1em =16px
+*/
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +27,26 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
   padding: 1.5rem;
-  min-width: 367px;
+}
+
+@media (max-width: 75em) {
+  body {
+    padding: 0;
+  }
 }
 
 @-webkit-keyframes moveInRight {
@@ -149,10 +184,30 @@ body {
   margin-right: 9%;
 }
 
+@media (max-width: 20em) {
+  .nav {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+.nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .navList {
   list-style: none;
   float: right;
   margin-top: 4.5rem;
+}
+
+@media (max-width: 56.25em) {
+  .navList {
+    display: none;
+  }
 }
 
 .navItem {
@@ -187,12 +242,6 @@ body {
 .navLogo {
   height: 11rem;
   width: 23rem;
-}
-
-.nav::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 .overlay {
@@ -264,6 +313,20 @@ body {
   border-radius: 6px;
 }
 
+@media (max-width: 56.25em) {
+  .banner {
+    height: 28rem;
+  }
+}
+
+@media (max-width: 20em) {
+  .banner {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
 .bannerContent {
   display: block;
   position: absolute;
@@ -291,9 +354,39 @@ body {
           box-shadow: 6px 9px 20px #418fc396;
 }
 
+@media (max-width: 56.25em) {
+  .bannerContent {
+    background-color: transparent;
+    color: #000;
+    height: 22rem;
+    width: 35rem;
+    padding: 0;
+    right: 0;
+    margin-left: 5%;
+    position: relative;
+    top: 98%;
+    left: -5%;
+    -webkit-animation: moveInTop 0.6s;
+            animation: moveInTop 0.6s;
+  }
+  .bannerContent:hover {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 .bannerContentLink {
   text-decoration: none;
   color: #fff;
+}
+
+@media (max-width: 56.25em) {
+  .bannerContentLink {
+    color: #000;
+  }
 }
 
 .bannerContentLink__mainTitle {
@@ -303,6 +396,15 @@ body {
   text-decoration: none;
 }
 
+@media (max-width: 56.25em) {
+  .bannerContentLink__mainTitle {
+    display: block;
+    font-size: 4rem;
+    padding-top: 3rem;
+    font-weight: 500;
+  }
+}
+
 .bannerContentLink__subTitle {
   display: inline-block;
   margin-top: 2rem;
@@ -310,8 +412,32 @@ body {
   font-weight: 300;
 }
 
+@media (max-width: 56.25em) {
+  .bannerContentLink__subTitle {
+    display: block;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 20em) {
+  .bannerContentLink__subTitle {
+    font-size: 2.4rem;
+  }
+}
+
 .burgerMenu {
   display: none;
+}
+
+@media (max-width: 56.25em) {
+  .burgerMenu {
+    display: block;
+    float: right;
+    -webkit-transform: translateY(98%);
+            transform: translateY(98%);
+  }
 }
 
 .burgerMenuBtn {

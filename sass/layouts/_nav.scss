@@ -2,8 +2,18 @@
     width: 84%;
     margin-left: 7%;
     margin-right: 9%;
+    @include respond(smallPhone) {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    @include clearfix;
 
     &List {
+        @include respond(tabPort) {
+            display: none;
+        }
         list-style: none;
         float: right;
         margin-top: 4.5rem;
@@ -35,10 +45,5 @@
     &Logo {
         height: 11rem;
         width: 23rem;
-    }
-    &::after {
-        content: "";
-        clear: both;
-        display: table;
     }
 }
