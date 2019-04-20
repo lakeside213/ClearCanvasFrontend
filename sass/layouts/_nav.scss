@@ -1,0 +1,44 @@
+.nav {
+    width: 84%;
+    margin-left: 7%;
+    margin-right: 9%;
+
+    &List {
+        list-style: none;
+        float: right;
+        margin-top: 4.5rem;
+    }
+    &Item {
+        display: inline-block;
+        margin-left: 4rem;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+    &Item:first-child {
+        display: inline-block;
+        margin-left: 0;
+        text-decoration: none;
+    }
+    &Link {
+        color: #1a171b;
+        border-bottom: 3px solid transparent;
+        transition: all 0.2s;
+        text-decoration: none;
+        &:hover {
+            border-bottom: 1.5px solid #000;
+        }
+    }
+
+    &LogoContainer {
+        float: left;
+    }
+    &Logo {
+        height: 11rem;
+        width: 23rem;
+    }
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}

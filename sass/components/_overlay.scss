@@ -1,0 +1,48 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: $color-black;
+    overflow-x: hidden;
+    z-index: 1000;
+    transition: width 0.4s;
+    backface-visibility: hidden;
+
+    a {
+        padding: 2rem;
+        color: $color-white;
+        font-size: 3rem;
+        text-decoration: none;
+        display: block;
+        font-weight: 300;
+        &:hover {
+            color: $color-white-light-1;
+        }
+    }
+    &Content {
+        position: relative;
+        top: 10%;
+        left: 6%;
+        width: 100%;
+        text-align: start;
+        margin-top: 7rem;
+    }
+    &Link {
+        padding: 2rem;
+        color: $color-white;
+        font-size: 3rem;
+        text-decoration: none;
+        display: block;
+        font-weight: 300;
+        backface-visibility: hidden;
+    }
+    &CloseBtn {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        font-size: 5rem;
+        animation-delay: 0.3s;
+    }
+}

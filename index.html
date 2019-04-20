@@ -19,12 +19,12 @@
             rel="stylesheet"
         />
         <meta name="format-detection" content="telephone=no" />
-        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="styles/queries.css" />
     </head>
     <body>
         <div id="nav" class="overlay">
-            <a href="#" class="menuCloseBtn" onclick="closeNav()">&times;</a>
+            <a href="#" class="overlayCloseBtn" onclick="closeNav()">&times;</a>
 
             <div class="overlayContent">
                 <a class="overlayLink" href="#">Über uns</a>
@@ -34,24 +34,32 @@
             </div>
         </div>
 
-        <header class="siteHeader">
-            <nav class="siteNav">
-                <div class="logoContainer">
-                    <a href="/" class="logo"
-                        ><img src="assets/images/logo.svg"
+        <header class="header">
+            <nav class="nav">
+                <div class="navLogoContainer">
+                    <a href="/"
+                        ><img class="navLogo" src="assets/images/logo.svg"
                     /></a>
                 </div>
-                <ul class="navigation">
-                    <li><a href="#">Über uns</a></li>
-                    <li><a href="#">Neues</a></li>
-                    <li><a href="#">Karriere</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                <ul class="navList">
+                    <li class="navItem">
+                        <a href="#" class="navLink">Über uns</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#" class="navLink">Neues</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#" class="navLink">Karriere</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#" class="navLink">Kontakt</a>
+                    </li>
                 </ul>
-                <a href="#" class="menuOpenBtn">
-                    <div class="burgerMenu" onclick="openNav(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
+                <a href="#" class="burgerMenu">
+                    <div class="burgerMenuBtn" onclick="openNav(this)">
+                        <div class="burgerMenuBar"></div>
+                        <div class="burgerMenuBar"></div>
+                        <div class="burgerMenuBar"></div>
                     </div>
                 </a>
             </nav>
@@ -59,9 +67,11 @@
         <main>
             <div class="banner">
                 <div class="bannerContent">
-                    <a href="#">
-                        <span>Hier steht ein toller Beispielsatz.</span>
-                        <div>
+                    <a href="#" class="bannerContentLink">
+                        <span class="bannerContentLink__mainTitle"
+                            >Hier steht ein toller Beispielsatz.</span
+                        >
+                        <div class="bannerContentLink__subTitle">
                             Hier geht's zur nächsten Seite
                         </div>
                     </a>

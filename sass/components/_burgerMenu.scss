@@ -1,0 +1,14 @@
+.burgerMenu {
+    display: none;
+
+    &Btn {
+        display: inline-block;
+        cursor: pointer;
+    }
+    &Bar {
+        width: 35px;
+        height: 2px;
+        background-color: #333;
+        margin: 0.8rem 0;
+    }
+}

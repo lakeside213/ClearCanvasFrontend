@@ -1,0 +1,49 @@
+.banner {
+    background-image: url($banner-img-url);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 52rem;
+    width: 85%;
+    margin-left: 7%;
+    margin-right: 8%;
+    border-radius: 6px;
+    &Content {
+        display: block;
+        position: absolute;
+        background-color: $color-blue-light;
+        height: 22rem;
+        width: 51rem;
+        top: 68%;
+        padding: 2rem;
+        padding-left: 4rem;
+        right: 4%;
+        border-radius: 6px;
+        transition: all 0.2s;
+        animation: moveInRight 0.6s;
+        backface-visibility: hidden;
+        &:hover {
+            transform: scale(1.1);
+            background-color: $color-blue-dark;
+            box-shadow: 6px 9px 20px $color-blue-shadow;
+        }
+        &Link {
+            text-decoration: none;
+            color: $color-white;
+
+            &__mainTitle {
+                display: inline-block;
+                font-size: 4rem;
+                font-weight: 300;
+
+                text-decoration: none;
+            }
+            &__subTitle {
+                display: inline-block;
+                margin-top: 2rem;
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
